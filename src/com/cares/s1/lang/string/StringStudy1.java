@@ -16,13 +16,28 @@ public class StringStudy1 {
 		System.out.println("업로드할 파일명을 입력하세요.");
 		String fileName = sc.next();
 		
-		
-		
 		if (fileName.indexOf("jpg") >= 0 || fileName.indexOf("gif")>= 0 || fileName.indexOf("png") >= 0) {
 			System.out.println("이미지 파일입니다.");
 		} else if (fileName.indexOf("txt") >= 0 || fileName.indexOf("pdf")>= 0 || fileName.indexOf("hwp") >= 0) {
 			System.out.println("문서 파일입니다.");
 		} else if (fileName.indexOf("mp3") >= 0 || fileName.indexOf("wav")>= 0 || fileName.indexOf("ogg") >= 0) {
+			System.out.println("음원 파일입니다.");
+		} else {
+			System.out.println("알 수 없는 파일입니다.");
+		}	
+	}
+	
+	public void s() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("파일명 입력");
+		String fileName = sc.next();
+		String result = fileName.substring(fileName.lastIndexOf(".")+1); // 확장자명 추출하기
+		
+		if(result.equals("jpg") || result.equals("gif") || result.equals("png")) {
+			System.out.println("이미지 파일입니다.");
+		} else if (result.equals("txt") || result.equals("pdf") || result.equals("hwp")) {
+			System.out.println("문서 파일입니다.");
+		} else if (result.equals("mp3") || result.equals("wav") || result.equals("ogg")) {
 			System.out.println("음원 파일입니다.");
 		} else {
 			System.out.println("알 수 없는 파일입니다.");
