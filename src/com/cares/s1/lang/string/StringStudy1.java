@@ -4,6 +4,34 @@ import java.util.Scanner;
 
 public class StringStudy1 {
 
+	public void splitTest() {
+		String name = "iu, suji, choa, 펭수, 춘식이";
+		
+		String [] arr = name.split(", ");
+		for (int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+		
+	}
+	
+	public void valueTest() {
+		int num = 1000;
+		System.out.println(String.valueOf(num));
+						
+	}
+	
+	
+	public void caseTest() {
+		String title = "West Side Story";
+		System.out.println(title.toLowerCase());
+	}
+	
+	public void replaceTest() {
+		String title = "West Side Story";		
+		System.out.println(title.replace("Side", "side")); // West side story
+	}
+	
+	
 	public void subStringEx1() {
 		// 키보드로부터 업로드할 파일명을 입력
 		// ex) a.txt, b.pdf, c.jpg
