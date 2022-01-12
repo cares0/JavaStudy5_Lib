@@ -126,9 +126,9 @@ public class WrapperAnswer {
 		}
 
 		if (sum == Integer.parseInt(String.valueOf(jumin.charAt(13)))) {
-
-
-
+			System.out.println("정상입니다.");
+		} else {
+			System.out.println("비정상입니다.");
 		}
 
 		/* chatAt을 사용하는 방법
