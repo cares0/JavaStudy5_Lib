@@ -17,9 +17,7 @@ public class MemberMain {
 			System.out.println("PW : " + ar.get(i).getPw());
 			System.out.println("Name : " + ar.get(i).getName());
 			System.out.println("Email : " + ar.get(i).getEmail());
-			System.out.println("Age : " + ar.get(i).getAge());
-			
-			
+			System.out.println("Age : " + ar.get(i).getAge());						
 			
 		}
 	}
