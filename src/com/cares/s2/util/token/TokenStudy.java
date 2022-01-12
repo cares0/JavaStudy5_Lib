@@ -1,5 +1,6 @@
 package com.cares.s2.util.token;
 
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class TokenStudy {
@@ -13,6 +14,9 @@ public class TokenStudy {
 		StringTokenizer st = new StringTokenizer(str, ",");
 		// 어떤 String을 어떤 기준으로 자를 것이냐
 		
+		
+		ArrayList<SeasonDTO> ar = new ArrayList<>();
+		
 		while(st.hasMoreTokens()) {
 			SeasonDTO seasonDTO = new SeasonDTO();
 			String token = st.nextToken();
@@ -23,11 +27,14 @@ public class TokenStudy {
 			// 내가 원하는 만큼 잘라서 원하는 데이터에 넣을 수 있다.
 			// split을 사용하면 인덱스를 기억해서 막 작업해야하지만 이건 그러지 않아도 된다.
 			
-			System.out.println(seasonDTO.getName());
-			System.out.println(seasonDTO.getAvgTemp());
+			ar.add(seasonDTO);
 			
 		}
-		
+		for(int i=0;i<ar.size();i++) {
+			SeasonDTO seasonDTO = ar.get(i);
+			System.out.println(seasonDTO.getName());
+			System.out.println(seasonDTO.getAvgTemp());
+		}
 		
 		
 		while(st.hasMoreTokens()) { 
