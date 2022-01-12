@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class WrapperEx1 {
 
-	Scanner sc;
+	private Scanner sc;
+	
+	public WrapperEx1() {
+		this.sc = new Scanner(System.in);
+	}
 	
 	public void ex2() {
 		// 주민번호 검증프로그램
@@ -24,7 +28,6 @@ public class WrapperEx1 {
 		// 4. 만약에 뺀 값이 두자리라면 결과값을 다시 10으로 나누어서 그 나머지 값을 체크용번호랑 같은지 비교
 		// 11 / 10 = 1 ... 1 > 이걸 체크용 번호와 맞는지 비교
 		// 맞으면 정상 / 틀리면 비정상
-		sc = new Scanner(System.in);
 		System.out.println("주민등록번호를 입력해주세요.");
 		String number = sc.next();
 		
@@ -52,6 +55,9 @@ public class WrapperEx1 {
 		System.out.println(sum);
 		
 		int result = 11 - sum % 11;
+		if (result > 9) {
+			result = result%10;
+		}
 		
 		if (result == numArr[13]) { // 비교하기
 			System.out.println("정상입니다");
@@ -68,7 +74,6 @@ public class WrapperEx1 {
 		// 남자 여자
 		// 어느 계절에 태어났는지
 		// 3-5 : 봄 / 6-8 : 여름 / 9-11 : 가을 / 12 - 3 : 겨율
-		sc = new Scanner(System.in);
 		System.out.println("주민등록번호를 입력해주세요.");
 		String number = sc.next();
 		
