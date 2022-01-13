@@ -1,4 +1,4 @@
-package com.cares.s3.ex1;
+package com.cares.s3.ex1.member;
 
 public class MemberDTO {
 
