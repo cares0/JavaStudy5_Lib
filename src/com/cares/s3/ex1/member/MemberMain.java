@@ -2,8 +2,6 @@ package com.cares.s3.ex1.member;
 
 import java.util.ArrayList;
 
-import com.cares.s2.util.collenction.MapStudy;
-import com.cares.s2.util.collenction.SetStudy;
 
 public class MemberMain {
 
