@@ -1,9 +1,31 @@
 package com.cares.s2.util.collenction;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ListStudy {
-
+	
+	
+	public List<String> study5() {
+		ArrayList<String> ar = new ArrayList<String>();
+		ar.add("1");		
+		return ar;
+	}
+	
+	
+	public void study4() {
+		LinkedList<Integer> list = new LinkedList<>();		
+		list.add(1);
+		list.add(2);
+		
+		
+		
+		
+		
+		
+	}
+	
 	public void study3() {
 
 		// ArrayList<E> 변수명 = new ArrayList<E>();
